@@ -90,22 +90,6 @@ export default function ContactSection() {
             className="text-center mt-8 text-white"
           >
             <p>Visit us at: {address}</p>
-            
-            {/* Haitian flag colors */}
-            <div className="mt-6 flex justify-center">
-              <div className="rounded overflow-hidden flex items-center">
-                <div className="w-12 h-8 bg-[#00209F] flex items-center justify-center">
-                  <div className="w-4 h-4">
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M12 2L15 8L21 9L16.5 14L18 20L12 17L6 20L7.5 14L3 9L9 8L12 2Z" fill="#F1B517" />
-                    </svg>
-                  </div>
-                </div>
-                <div className="w-12 h-8 bg-[#D21034] flex items-center justify-center">
-                  <div className="w-4 h-4 text-white text-xs">HM</div>
-                </div>
-              </div>
-            </div>
           </motion.div>
         </div>
       </div>
