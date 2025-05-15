@@ -5,6 +5,7 @@ import Navigation from './Navigation';
 import ServicesSection from './ServicesSection';
 import TestimonialsCarousel from './TestimonialsCarousel';
 import ContactSection from './ContactSection';
+import CarAnimation from './CarAnimation';
 
 export default function LandingPage() {
   return (
@@ -13,11 +14,14 @@ export default function LandingPage() {
       
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center bg-gray-900 overflow-hidden">
-        {/* Background overlay */}
-        <div className="absolute inset-0 bg-black opacity-60 z-10"></div>
+        {/* Background overlay with gradient */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black via-black/70 to-black/40 z-10"></div>
         
-        {/* Background image */}
-        <div className="absolute inset-0 bg-[url('/auto-repair-bg.jpg')] bg-cover bg-center"></div>
+        {/* Background image with reduced opacity */}
+        <div className="absolute inset-0 bg-[url('/auto-repair-bg.svg')] bg-cover bg-center opacity-70"></div>
+        
+        {/* Car animation */}
+        <CarAnimation />
         
         <div className="container mx-auto px-4 relative z-20 text-center">
           <motion.div
@@ -44,6 +48,8 @@ export default function LandingPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.9 }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.98 }}
           >
             <a
               href="tel:305-123-1234"
@@ -63,13 +69,27 @@ export default function LandingPage() {
         >
           <button
             onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
-            className="flex flex-col items-center text-white animate-bounce"
+            className="flex flex-col items-center text-white"
             aria-label="Scroll to services"
           >
-            <span className="text-sm mb-2">Learn More</span>
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <motion.span 
+              className="text-sm mb-2"
+              animate={{ y: [0, 5, 0] }}
+              transition={{ duration: 1.5, repeat: Infinity }}
+            >
+              Learn More
+            </motion.span>
+            <motion.svg 
+              className="w-6 h-6" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24" 
+              xmlns="http://www.w3.org/2000/svg"
+              animate={{ y: [0, 5, 0] }}
+              transition={{ duration: 1.5, repeat: Infinity, delay: 0.2 }}
+            >
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-            </svg>
+            </motion.svg>
           </button>
         </motion.div>
       </section>
