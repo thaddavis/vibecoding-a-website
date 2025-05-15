@@ -47,7 +47,7 @@ export default function TestimonialsCarousel() {
         >
           <h2 className="text-3xl font-bold text-[#00209F] mb-4">Customer Testimonials</h2>
           <p className="text-gray-800 max-w-2xl mx-auto">
-            Don't just take our word for it - see what our customers have to say about our services.
+            Don&apos;t just take our word for it - see what our customers have to say about our services.
           </p>
         </motion.div>
 

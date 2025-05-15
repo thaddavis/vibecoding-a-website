@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import { services } from '../data/services';
-import { Service } from '../types';
 
 const containerVariants = {
   hidden: { opacity: 0 },
