@@ -67,8 +67,8 @@ export default function CarAnimation() {
           {/* Car body */}
           <motion.path 
             d="M220,60h-32l-20-30H80L60,60H20C10,60,0,70,0,80v10h240V80C240,70,230,60,220,60z" 
-            fill="#3b82f6"
-            animate={{ fill: ['#3b82f6', '#2563eb', '#3b82f6'] }}
+            fill="#00209F"
+            animate={{ fill: ['#00209F', '#D21034', '#00209F'] }}
             transition={{ duration: 3, repeat: Infinity }}
           />
           
@@ -100,13 +100,13 @@ export default function CarAnimation() {
           {/* Headlights */}
           <motion.circle
             cx="220" cy="65" r="8"
-            fill="yellow"
+            fill="#F1B517"
             animate={{ opacity: [1, 0.7, 1], scale: [1, 1.1, 1] }}
             transition={{ duration: 2, repeat: Infinity }}
           />
           <motion.circle
             cx="220" cy="65" r="12"
-            fill="yellow"
+            fill="#F1B517"
             opacity={0.3}
             animate={{ opacity: [0.3, 0.5, 0.3], scale: [1, 1.3, 1] }}
             transition={{ duration: 2, repeat: Infinity }}
@@ -145,12 +145,12 @@ export default function CarAnimation() {
           <svg viewBox="0 0 120 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path 
               d="M100,30h-16l-10-15H40L30,30H10C5,30,0,35,0,40v5h120V40C120,35,115,30,100,30z" 
-              fill={`hsl(${Math.floor(randomSeeds[i] * 360)}, 70%, 50%)`}
+              fill={i % 3 === 0 ? '#00209F' : i % 3 === 1 ? '#D21034' : '#016A16'}
             />
             <circle cx="30" cy="40" r="7" fill="black" />
             <circle cx="90" cy="40" r="7" fill="black" />
-            <rect x="95" y="30" width="5" height="3" rx="1" fill="red" />
-            <circle cx="10" cy="32" r="4" fill="yellow" opacity="0.8" />
+            <rect x="95" y="30" width="5" height="3" rx="1" fill="#D21034" />
+            <circle cx="10" cy="32" r="4" fill="#F1B517" opacity="0.8" />
           </svg>
         </motion.div>
       ))}

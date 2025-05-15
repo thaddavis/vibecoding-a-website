@@ -3,6 +3,12 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  
+  /* Haitian flag colors */
+  --haiti-blue: #00209F;
+  --haiti-red: #D21034;
+  --haiti-green: #016A16;
+  --haiti-yellow: #F1B517;
 }
 
 @theme inline {
@@ -23,4 +29,34 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--haiti-blue);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--haiti-red);
+}
+
+/* Selection color */
+::selection {
+  background-color: var(--haiti-blue);
+  color: white;
+}
+
+/* Button focus styles */
+button:focus, a:focus {
+  outline: 2px solid var(--haiti-yellow);
+  outline-offset: 2px;
 }

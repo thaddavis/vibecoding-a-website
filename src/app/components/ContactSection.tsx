@@ -11,7 +11,7 @@ export default function ContactSection() {
   const address = '123 Auto Repair Street, Miami, FL 33127';
   
   return (
-    <section id="contact" className="py-20 bg-blue-600 text-white">
+    <section id="contact" className="py-20 bg-[#00209F]">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -20,8 +20,8 @@ export default function ContactSection() {
           viewport={{ once: true, margin: "-100px" }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl font-bold mb-4">Contact Us</h2>
-          <p className="max-w-2xl mx-auto text-blue-100">
+          <h2 className="text-3xl font-bold mb-4 text-white">Contact Us</h2>
+          <p className="max-w-2xl mx-auto text-white">
             Need auto repair services? Get in touch with Haitian Mike today for a free consultation.
           </p>
         </motion.div>
@@ -36,13 +36,13 @@ export default function ContactSection() {
               stiffness: 100
             }}
             viewport={{ once: true, margin: "-100px" }}
-            className="bg-white text-gray-800 rounded-lg shadow-lg p-8 text-center"
+            className="bg-white text-gray-800 rounded-lg shadow-lg p-8 text-center border-4 border-[#F1B517]"
           >
             <motion.div
               initial={{ y: 10, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.2 }}
-              className="text-2xl font-bold mb-4"
+              className="text-2xl font-bold mb-4 text-[#00209F]"
             >
               Call us directly
             </motion.div>
@@ -51,7 +51,7 @@ export default function ContactSection() {
               href={`tel:${phoneNumber}`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-block text-3xl md:text-4xl font-bold text-blue-600 mb-6 hover:text-blue-700 transition-colors"
+              className="inline-block text-3xl md:text-4xl font-bold text-[#D21034] mb-6 hover:text-[#D21034]/90 transition-colors"
               aria-label={`Call us at ${phoneNumber}`}
             >
               {phoneNumber}
@@ -62,7 +62,7 @@ export default function ContactSection() {
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.4 }}
             >
-              <p className="text-gray-600 mb-6">
+              <p className="text-gray-800 mb-6">
                 Our expert technicians are available Monday-Saturday, 8am-6pm.
                 Call now for immediate assistance or to schedule an appointment.
               </p>
@@ -73,7 +73,7 @@ export default function ContactSection() {
               >
                 <a
                   href={`tel:${phoneNumber}`}
-                  className="inline-block px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors shadow-md"
+                  className="inline-block px-8 py-4 bg-[#D21034] text-white font-semibold rounded-lg hover:bg-[#D21034]/90 transition-colors shadow-md"
                   aria-label={`Call Haitian Mike's Auto Repair at ${phoneNumber}`}
                 >
                   Call Now
@@ -87,9 +87,25 @@ export default function ContactSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.5 }}
             viewport={{ once: true, margin: "-100px" }}
-            className="text-center mt-8 text-blue-100"
+            className="text-center mt-8 text-white"
           >
             <p>Visit us at: {address}</p>
+            
+            {/* Haitian flag colors */}
+            <div className="mt-6 flex justify-center">
+              <div className="rounded overflow-hidden flex items-center">
+                <div className="w-12 h-8 bg-[#00209F] flex items-center justify-center">
+                  <div className="w-4 h-4">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 2L15 8L21 9L16.5 14L18 20L12 17L6 20L7.5 14L3 9L9 8L12 2Z" fill="#F1B517" />
+                    </svg>
+                  </div>
+                </div>
+                <div className="w-12 h-8 bg-[#D21034] flex items-center justify-center">
+                  <div className="w-4 h-4 text-white text-xs">HM</div>
+                </div>
+              </div>
+            </div>
           </motion.div>
         </div>
       </div>

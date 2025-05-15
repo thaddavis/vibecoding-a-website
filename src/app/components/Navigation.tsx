@@ -47,24 +47,24 @@ export default function Navigation() {
   }, []);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-white z-50 shadow-md">
+    <nav className="fixed top-0 left-0 right-0 bg-white z-50 shadow-md border-b-2 border-[#D21034]">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          <div className="text-xl font-bold text-blue-600">Haitian Mike&apos;s Auto Repair</div>
+          <div className="text-xl font-bold text-[#00209F]">Haitian Mike&apos;s Auto Repair</div>
           <ul className="flex space-x-8">
             {navItems.map((item) => (
               <li key={item.target}>
                 <button
                   onClick={() => handleClick(item.target)}
                   className={`relative px-2 py-1 text-sm font-medium ${
-                    activeSection === item.target ? 'text-blue-600' : 'text-gray-700 hover:text-blue-500'
+                    activeSection === item.target ? 'text-[#D21034]' : 'text-gray-700 hover:text-[#00209F]'
                   }`}
                   aria-label={`Scroll to ${item.label} section`}
                 >
                   {item.label}
                   {activeSection === item.target && (
                     <motion.div
-                      className="absolute bottom-0 left-0 right-0 h-0.5 bg-blue-600"
+                      className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#D21034]"
                       layoutId="activeSection"
                       transition={{ type: 'spring', stiffness: 300, damping: 30 }}
                     />

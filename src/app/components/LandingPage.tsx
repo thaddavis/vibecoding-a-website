@@ -53,7 +53,7 @@ export default function LandingPage() {
           >
             <a
               href="tel:305-123-1234"
-              className="inline-block px-8 py-4 bg-blue-600 text-white font-bold rounded-lg text-lg hover:bg-blue-700 transition-colors shadow-lg"
+              className="inline-block px-8 py-4 bg-[#00209F] hover:bg-[#D21034] text-white font-bold rounded-lg text-lg transition-colors shadow-lg border-2 border-[#F1B517]"
               aria-label="Call Haitian Mike's Auto Repair"
             >
               Call Now: 305-123-1234
@@ -69,7 +69,7 @@ export default function LandingPage() {
         >
           <button
             onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
-            className="flex flex-col items-center text-white"
+            className="flex flex-col items-center text-[#F1B517]"
             aria-label="Scroll to services"
           >
             <motion.span 
@@ -99,10 +99,10 @@ export default function LandingPage() {
       <ContactSection />
       
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-8">
+      <footer className="bg-[#00209F] text-white py-8 border-t-4 border-[#F1B517]">
         <div className="container mx-auto px-4 text-center">
           <p>&copy; {new Date().getFullYear()} Haitian Mike&apos;s Auto Repair. All rights reserved.</p>
-          <p className="mt-2 text-gray-400">123 Auto Repair Street, Miami, FL 33127 | 305-123-1234</p>
+          <p className="mt-2 text-[#F1B517]">123 Auto Repair Street, Miami, FL 33127 | 305-123-1234</p>
         </div>
       </footer>
     </div>
