@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { cn } from "@/lib/utils";
 
 export function MainNav() {
   return (
@@ -8,7 +7,7 @@ export function MainNav() {
         href="/"
         className="mr-6 flex items-center space-x-2"
       >
-        <span className="hidden font-bold sm:inline-block">
+        <span className="hidden font-bold sm:inline-block bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600 dark:from-gray-100 dark:to-gray-400">
           COMMAND LABS
         </span>
       </Link>
