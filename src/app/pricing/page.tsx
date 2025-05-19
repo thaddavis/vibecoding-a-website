@@ -47,7 +47,7 @@ export default function PricingPage() {
     >
       <h1 className="text-3xl font-bold mb-8 text-center">Pricing</h1>
       <div className="grid gap-8 md:grid-cols-3">
-        {pricingTiers.map((tier, i) => (
+        {pricingTiers.map((tier) => (
           <div
             key={tier.name}
             className={`flex flex-col rounded-2xl border border-gray-200 bg-white shadow-md p-8 text-center ${
