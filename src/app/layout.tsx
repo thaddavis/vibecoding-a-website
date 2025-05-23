@@ -8,8 +8,8 @@ import { SiteFooter } from "@/components/footer/site-footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "COMMAND LABS - AI Automation Agency",
-  description: "Transforming businesses through intelligent automation solutions",
+  title: "COMMAND LABS - Digital Transformation Agency",
+  description: "Transforming businesses through tailored solutions",
   keywords: ["AI", "Automation", "Digital Transformation", "Machine Learning", "Business Intelligence"],
   icons: {
     icon: [
