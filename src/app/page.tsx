@@ -4,6 +4,7 @@ import { Bot, Code, Zap } from "lucide-react";
 import HeroSection from "@/components/HeroSection";
 import { LogoCarousel } from "@/components/LogoCarousel";
 import { OptInForm } from "@/components/OptInForm";
+import { AnimatedCounter } from "@/components/AnimatedCounter";
 
 export default function Home() {
   return (
@@ -73,13 +74,29 @@ export default function Home() {
         </section>
 
         {/* Benefits List Section */}
-        <section id="next-section" className="bg-white text-grey py-16 md:py-24">
+        <section className="bg-white text-grey py-16 md:py-24">
           <div className="max-w-4xl mx-auto px-4 md:px-6 flex flex-col items-center">
-            <ul className="flex flex-col md:flex-row justify-center gap-4 text-base mb-8">
-              <li>Save 10+ hours/week</li>
-              <li>Boost revenue by 30%</li>
-              <li>No technical skills required</li>
-            </ul>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 w-full">
+              <AnimatedCounter
+                end={400000}
+                prefix="$"
+                suffix="+"
+                label="Revenue Generated"
+                duration={2000}
+              />
+              <AnimatedCounter
+                end={8}
+                suffix="+"
+                label="Years in Business"
+                duration={2000}
+              />
+              <AnimatedCounter
+                end={20}
+                suffix="+"
+                label="Clients Served"
+                duration={2200}
+              />
+            </div>
           </div>
         </section>
 
