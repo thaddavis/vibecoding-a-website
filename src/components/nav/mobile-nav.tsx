@@ -60,20 +60,6 @@ export function MobileNav() {
               >
                 Services
               </Link>
-              <Link
-                href="/case-studies"
-                className="py-3 text-lg font-semibold text-white hover:text-red-200"
-                onClick={() => setIsOpen(false)}
-              >
-                Case Studies
-              </Link>
-              <Link
-                href="/contact"
-                className="py-3 text-lg font-semibold text-white hover:text-red-200"
-                onClick={() => setIsOpen(false)}
-              >
-                Contact
-              </Link>
             </nav>
           </aside>
         </>

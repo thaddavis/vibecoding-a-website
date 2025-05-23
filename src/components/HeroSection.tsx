@@ -1,5 +1,17 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+
+const handleGetStartedClick = () => {
+  const footer = document.getElementById('footer');
+  if (footer) {
+    footer.scrollIntoView({ 
+      behavior: 'smooth',
+      block: 'start'
+    });
+  }
+};
 
 export default function HeroSection() {
   return (
@@ -14,7 +26,12 @@ export default function HeroSection() {
         </div>
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-          <Link href="/get-started" className="inline-flex h-12 items-center justify-center rounded-full bg-red-500 px-8 text-lg font-semibold text-white shadow hover:bg-red-800 transition-all">Get Started</Link>
+          <button 
+            onClick={handleGetStartedClick}
+            className="inline-flex h-12 items-center justify-center rounded-full bg-red-500 px-8 text-lg font-semibold text-white shadow hover:bg-red-800 transition-all"
+          >
+            Get Started
+          </button>
           <Link href="/services" className="inline-flex h-12 items-center justify-center rounded-full border border-white px-8 text-lg font-semibold text-white hover:bg-white hover:text-black transition-all">Services</Link>
         </div>
       </div>
