@@ -7,7 +7,7 @@ export function MainNav() {
         href="/"
         className="mr-6 flex items-center space-x-2"
       >
-        <span className="hidden font-bold sm:inline-block bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600 dark:from-gray-100 dark:to-gray-400">
+        <span className="hidden font-bold sm:inline-block text-white">
           COMMAND LABS
         </span>
       </Link>
@@ -23,18 +23,6 @@ export function MainNav() {
           className="transition-colors hover:text-foreground/80 text-foreground/60"
         >
           Services
-        </Link>
-        <Link
-          href="/case-studies"
-          className="transition-colors hover:text-foreground/80 text-foreground/60"
-        >
-          Case Studies
-        </Link>
-        <Link
-          href="/contact"
-          className="transition-colors hover:text-foreground/80 text-foreground/60"
-        >
-          Contact
         </Link>
       </nav>
     </div>

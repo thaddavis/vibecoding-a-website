@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
   content: [
     './src/**/*.{js,ts,jsx,tsx}',
@@ -8,10 +9,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#F82C54', // Command Labs Red
-        maroon: '#8B1C32',  // Deep Maroon
-        light: '#F8F8F8',   // Light Gray
+        primary: '#ff0000', // Red
+        darkred: '#8a112d', // Dark Red
+        grey: '#5a6268',    // Grey
+        white: '#ffffff',   // White
       },
     },
   },
+  plugins: [],
 }; 

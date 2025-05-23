@@ -2,13 +2,13 @@ import Link from "next/link";
 
 export function SiteFooter() {
   return (
-    <footer className="border-t py-6 md:py-0 bg-black text-white">
+    <footer className="border-t shadow py-6 md:py-0 bg-red-800 text-white">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 md:h-20 px-6 md:px-12 min-h-[64px]">
         <div className="flex flex-col md:flex-row items-center gap-2 text-center md:text-left w-full md:w-auto">
           <p className="text-sm leading-loose text-muted-foreground">
             Built by{' '}
             <a
-              href="https://commandlabs.ai"
+              href="https://cmdlabs.io"
               target="_blank"
               rel="noreferrer"
               className="font-medium underline underline-offset-4"

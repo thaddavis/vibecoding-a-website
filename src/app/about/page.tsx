@@ -11,11 +11,8 @@ export default function AboutPage() {
       transition={{ duration: 0.6 }}
     >
       <h1 className="text-3xl font-bold mb-4">About COMMAND LABS</h1>
-      <p className="text-gray-600 dark:text-gray-300 mb-4">
-        COMMAND LABS is an AI Automation Agency dedicated to transforming businesses through intelligent automation solutions. Our team of experts leverages the latest advancements in artificial intelligence and software engineering to deliver custom solutions tailored to your unique needs.
-      </p>
-      <p className="text-gray-600 dark:text-gray-300">
-        We believe in the power of technology to drive efficiency, innovation, and growth. Our mission is to empower organizations to achieve more with less by automating repetitive tasks, optimizing workflows, and unlocking new opportunities for success.
+      <p className="text-gray-600 dark:text-black mb-4">
+        COMMAND LABS is a software agency based in Miami, FL. Since incorporating in 2017, we have delivered Full Stack MVPs, worked with multinational corporations, and helped grow many small businesses throughout the US and beyond through our diverse and deep skillset. Our team is committed to driving the latest advancements in technology and to delivering custom solutions tailored to your unique needs.
       </p>
     </motion.div>
   );

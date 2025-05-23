@@ -25,51 +25,51 @@ export function MobileNav() {
             aria-label="Close menu overlay"
           />
           {/* Drawer */}
-          <aside className="fixed top-0 right-0 z-50 h-screen w-4/5 max-w-xs bg-white dark:bg-gray-950 shadow-2xl flex flex-col animate-in slide-in-from-right-40">
-            <div className="flex items-center justify-between px-6 py-5 border-b border-gray-200 dark:border-gray-800">
-              <span className="text-xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600 dark:from-gray-100 dark:to-gray-400">
+          <aside className="fixed top-0 right-0 z-50 h-screen w-4/5 max-w-xs bg-red-800 shadow-2xl flex flex-col animate-in slide-in-from-right-40">
+            <div className="flex items-center justify-between px-6 py-5 border-b border-red-700">
+              <span className="text-xl font-bold tracking-tight text-white">
                 COMMAND LABS
               </span>
               <button
                 onClick={() => setIsOpen(false)}
-                className="rounded-md p-2 hover:bg-gray-100 dark:hover:bg-gray-800"
+                className="rounded-md p-2 hover:bg-red-700 text-white"
                 aria-label="Close menu"
               >
                 <X className="h-6 w-6" />
               </button>
             </div>
-            <nav className="flex-1 flex flex-col justify-center gap-2 px-6 bg-white dark:bg-gray-950">
+            <nav className="flex-1 flex flex-col justify-center gap-2 px-6 bg-red-800">
               <Link
                 href="/"
-                className="py-3 text-lg font-semibold hover:underline"
+                className="py-3 text-lg font-semibold text-white hover:text-red-200"
                 onClick={() => setIsOpen(false)}
               >
                 Home
               </Link>
               <Link
                 href="/about"
-                className="py-3 text-lg font-semibold hover:underline"
+                className="py-3 text-lg font-semibold text-white hover:text-red-200"
                 onClick={() => setIsOpen(false)}
               >
                 About
               </Link>
               <Link
                 href="/services"
-                className="py-3 text-lg font-semibold hover:underline"
+                className="py-3 text-lg font-semibold text-white hover:text-red-200"
                 onClick={() => setIsOpen(false)}
               >
                 Services
               </Link>
               <Link
                 href="/case-studies"
-                className="py-3 text-lg font-semibold hover:underline"
+                className="py-3 text-lg font-semibold text-white hover:text-red-200"
                 onClick={() => setIsOpen(false)}
               >
                 Case Studies
               </Link>
               <Link
                 href="/contact"
-                className="py-3 text-lg font-semibold hover:underline"
+                className="py-3 text-lg font-semibold text-white hover:text-red-200"
                 onClick={() => setIsOpen(false)}
               >
                 Contact
