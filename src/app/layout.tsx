@@ -11,6 +11,28 @@ export const metadata: Metadata = {
   title: "COMMAND LABS - Digital Transformation Agency",
   description: "Transforming businesses through tailored solutions",
   keywords: ["AI", "Automation", "Digital Transformation", "Machine Learning", "Business Intelligence"],
+  openGraph: {
+    title: "COMMAND LABS - Digital Transformation Agency",
+    description: "Transforming businesses through tailored solutions",
+    url: "https://cmdlabs.io",
+    siteName: "COMMAND LABS",
+    images: [
+      {
+        url: "/cursive_c_512x512.png",
+        width: 512,
+        height: 512,
+        alt: "COMMAND LABS Logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "COMMAND LABS - Digital Transformation Agency",
+    description: "Transforming businesses through tailored solutions",
+    images: ["/cursive_c_512x512.png"],
+  },
   icons: {
     icon: [
       { url: '/favicon.ico' },
