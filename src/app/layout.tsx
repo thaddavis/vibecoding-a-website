@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     siteName: "COMMAND LABS",
     images: [
       {
-        url: "/cursive_c_512x512.png",
+        url: "/CMD_square_540x540.png",
         width: 512,
         height: 512,
         alt: "COMMAND LABS Logo",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "COMMAND LABS - Digital Transformation Agency",
     description: "Transforming businesses through tailored solutions",
-    images: ["/cursive_c_512x512.png"],
+    images: ["/CMD_square_540x540.png"],
   },
   icons: {
     icon: [
