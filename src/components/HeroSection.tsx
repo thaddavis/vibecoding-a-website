@@ -18,7 +18,7 @@ export default function HeroSection() {
     <section className="w-full py-20 md:py-32 xl:py-48 bg-darkred text-white text-center">
       <div className="max-w-4xl mx-auto px-4 md:px-6 flex flex-col items-center">
         {/* Headline & Subheadline */}
-        <h1 className="text-4xl md:text-6xl font-bold mb-4">Reimagining Your Business with cutting-edge technology</h1>
+        <h1 className="text-4xl md:text-6xl font-bold mb-4">Reimagining your Business with Cutting-edge Technology</h1>
         <p className="text-lg md:text-2xl mb-8 max-w-2xl">Unlock efficiency, save time, and scale with our tailored solutions.</p>
         {/* Visual */}
         <div className="mb-8">
